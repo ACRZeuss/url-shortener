@@ -50,7 +50,7 @@ const LinkPage = () => {
 
   useEffect(() => {
     fn();
-  }, [fn]);
+  }, []);
 
   useEffect(() => {
     if (!error && loading === false) fnStats();

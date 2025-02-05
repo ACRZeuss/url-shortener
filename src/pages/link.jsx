@@ -50,11 +50,11 @@ const LinkPage = () => {
 
   useEffect(() => {
     fn();
-  }, []);
+  }, [fn]);
 
   useEffect(() => {
     if (!error && loading === false) fnStats();
-  }, [loading, error]);
+  }, [loading, error, fnStats]);
 
   if (error) {
     navigate("/dashboard");

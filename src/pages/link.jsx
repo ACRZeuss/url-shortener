@@ -54,7 +54,7 @@ const LinkPage = () => {
 
   useEffect(() => {
     if (!error && loading === false) fnStats();
-  }, [loading, error, fnStats]);
+  }, [loading, error]);
 
   if (error) {
     navigate("/dashboard");
